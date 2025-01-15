@@ -27,7 +27,10 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin-top: 15px;
 }
-
+.service-icon i {
+    font-size: 2rem;
+    color: #00ADB5;
+}
 .service-title {
     font-size: 1.5rem;
     font-weight: 700;
@@ -67,7 +70,7 @@ i{
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #00ADB5 0%, #393E46 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     font-weight: 600;
     padding-left: 5px;
 
@@ -548,6 +551,7 @@ height: 100%;
     justify-content: center;
     font-size: 2rem;
     background-color: #fff;
+    color: #008891;
 }
 
 .contact-link {
@@ -926,5 +930,75 @@ animation: float 15s ease-in-out infinite;
         border-radius: 10px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         margin-top: 15px;
+    }
+}
+.-subtle {
+    color: #ac11cb;
+}
+.expert-doctors {
+    background: #f8f9fa;
+    overflow: hidden;
+}
+
+.doctor-image {
+    position: relative;
+    padding: 20px;
+}
+
+.doctor-image img {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.doctor-image:hover img {
+    transform: scale(1);
+}
+
+.experience-badge {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: #00ADB5;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.experience-badge .years {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.experience-badge .text {
+    font-size: 1rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.features-list i {
+    margin-left: 10px;
+}
+
+@media (max-width: 991px) {
+    .doctor-content {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .features-list {
+        display: inline-block;
+        text-align: right;
     }
 }
